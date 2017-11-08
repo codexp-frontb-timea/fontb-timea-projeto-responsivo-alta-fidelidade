@@ -34,11 +34,10 @@ body {
 .head__button-desktop {
     display: none;
 }
-<<<<<<< HEAD
-.page-hover {
-=======
 .navbar {
->>>>>>> fd836678737aee918d2f24bd94d2d0bd42099fd0
+    display: none;
+}
+.page-hover {
     display: none;
 }
 .main-news {
