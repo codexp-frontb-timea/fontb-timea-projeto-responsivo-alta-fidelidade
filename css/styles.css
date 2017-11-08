@@ -2,12 +2,10 @@ body {
     margin: 0;
     font-family: sans-serif;
 }
-
 .head {
     position: relative;
     background-color: #385c80;
 }
-
 .head__button-mobile {
     margin: 1em;
     border: .5px groove #2176ca;
@@ -15,7 +13,6 @@ body {
     color: white;
     background: linear-gradient(#3378b1,#385c80);
 }
-
 .head__logo {
     display: inline-block;
     position: absolute;
@@ -23,19 +20,48 @@ body {
     top: 50%;
     left: 50%;
 }
-
 .head__logo__text {
     display: inline;
     float: right;
     font-weight: normal;
-    font-size: 1em;
+    font-size: 1rem;
     color: rgb(201, 4, 4);
 }
-
 .head__logo__text strong {
     color: white;
 }
-
 .head__button-desktop {
     display: none;
+}
+.navbar {
+    display: none;
+}
+@media (min-width: 768px) {
+    .head__button-mobile {
+        display: none;
+    }
+    .head__button-desktop {
+        display: inline-block;
+        float: right;
+        margin: 1em;
+        padding: .3em 1em;
+        color: #385c80;
+        background-color: white;
+    }
+    .navbar {
+        display: block;
+        background-color: #e0e0d1;
+    }
+    .navbar__link-list {
+        list-style: none;
+    }
+    .navbar__link-list li {
+        display: inline;
+        margin: .5em;
+    }
+    .navbar__link-list a {
+        text-decoration: none;
+        font-size: .8rem;
+        color: dimgray;
+    }
 }
