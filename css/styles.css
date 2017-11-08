@@ -35,20 +35,25 @@ body {
 .head__button-desktop {
     display: none;
 }
+.page-hover {
+    display: none;
+}
 .main-news {
     background-color: #e0e0d1;
 }
 
 .main-news h4 {
-    font-size: .6rem;
+    padding: 1.5% 3% 0% 3%;
+    margin: .5%;
+    font-size: 1.2rem;
     color: #4080bf;
     font-weight: lighter;
-    padding: 1.5% 3% 0% 3%;
 }
 .main-news p {
-    padding: 1% 3%;
-    font-size: .4rem;
     margin: 0.5rem 0rem;
+    padding: 1% 3%;
+    font-size: .8rem;
+    color: dimgray;
 }
 .facebook-hotkey {
     position: relative;
@@ -61,6 +66,7 @@ body {
     height: 1rem;
     width: 1rem;
     text-decoration: none;
+    color: dimgray;
     border: .3px solid #ffffff;
     border-radius: 3%;
     background-color: #ffffff;
@@ -70,8 +76,31 @@ body {
     position: relative;
 }
 .facebook-hotkey h6 {
-    font-size: .3rem;
-    margin: 0;
     padding: .5rem 2rem;
+    margin: 0;
+    font-size: .5rem;
+    color: dimgray;
     font-weight: lighter;
+}
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+    .page-hover {
+        display: block;
+    }
+    .page-hover img {
+        width: 100%;
+    }
+    .page-hover h5 {
+        font-size: 2rem;
+        color: #ffffff;
+    }
+    .page-hover h5 {
+        font-size: 2.5rem;
+        color: #ffffff;
+        position: absolute;
+        bottom: 3%;
+        left: 2%;
+    }
 }
