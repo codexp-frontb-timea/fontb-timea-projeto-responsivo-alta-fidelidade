@@ -96,7 +96,11 @@ body {
 /*news */
 .news{
     display: inline-block;
-    margin: 5% 5%;
+    padding: 3%;
+}
+
+.news:nth-child(even){
+    background-color: #e0e0d1;
 }
 
 .news-text{
@@ -107,11 +111,9 @@ body {
 }
 
 .news-title{
-    display: inline-block;
     font-family: sans-serif;
     font-size: 1.2rem;
     color: #4080bf;
-    margin: 5%;
 }
 
 .news-image{
@@ -119,7 +121,6 @@ body {
     float: left;
     margin-right: 2%;
     width: 55%;
-    height: 20%;
 }
 
 .read-more-btn{
@@ -186,6 +187,7 @@ body {
     /*navbar*/
     .page-hover {
         display: block;
+        width: 100%;
     }
     .page-hover img {
         width: 100%;
@@ -201,4 +203,14 @@ body {
         bottom: 3%;
         left: 2%;
     }
+
+    .news-title{
+        margin: .4%;
+    }
+
+    .news-image{
+        width: 35%;
+    }
+
+
 }
