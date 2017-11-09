@@ -187,7 +187,7 @@ body {
         position: absolute;
         transform: translate(-50%,-50%);
         right: 0;
-        top: 50%;
+        top: 2.5rem;
         padding: .3em 1em;
         color: #385c80;
         background-color: white;
@@ -280,6 +280,8 @@ body {
    .head__button-desktop {
        position: absolute;
        display: block;
+       top: 80%;
+       left: 50%;
    }
    .navbar {
        position: relative;
