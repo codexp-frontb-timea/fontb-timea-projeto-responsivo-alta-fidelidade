@@ -2,6 +2,7 @@ body {
     width:100%;
     margin: 0;
     font-family: sans-serif;
+    background-color: none;
 }
 /*header*/
 .head {
@@ -164,6 +165,9 @@ body {
 
 
 @media (min-width: 768px) {
+    body { 
+        background-color: none;
+    }
     /*header*/
     .head {
         box-sizing: border-box; 
@@ -255,6 +259,52 @@ body {
     .news-image{
         width: 35%;
     }
+}
 
+@media (min-width: 992px) {
+   body {
+       background-color:#e0e0d1; 
+   } 
+   .page-hero img {
+        max-height: 25rem;
+        max-width: 64rem;
+   }
+   .page-hero h4 {
+        bottom: 1.5rem;
+        left: 20rem;
+   }
+   .main-news h4 {
+        margin: 0rem;
+        padding-bottom: 1rem;
+        float: right;
+        max-width: 64rem;
+        font-size: 1.4rem;
+}
+   .main-news p {
+        max-width: 64rem;
+        float: right;
+   }
+   .facebook-hotkey h6 {
+        padding: .5rem 2rem;
+        max-width: 22%;
+        float: right;
+   }
+    .facebook-hotkey a {
+        position: absolute;
+        bottom: -11.7rem;
+        right: 22rem;
+    }
+    .facebook-hotkey h6 {
+        margin-right: .5rem;
+        max-width: 22%;
+        float: right;
+   }
+   .news{
+    display: inline-block;
+    padding: 3%;
+}
 
+.news:nth-child(even){
+    background-color: #e0e0d1;
+}
 }
