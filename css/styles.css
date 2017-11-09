@@ -133,7 +133,7 @@ body {
 
 /*footer*/
 .footer{
-    display: flex;
+    display: block;
 }
 
 .bloco_footer{
@@ -261,7 +261,7 @@ body {
 
     /*footer*/
     .footer{
-        display: block;
+        display: flex;
     }
 }
 
@@ -314,6 +314,6 @@ body {
 
     /*footer*/
     .footer{
-        display: block;
+        display: flex;
     }
 }
