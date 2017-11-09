@@ -139,6 +139,7 @@ body {
 .bloco_footer{
     /*width: 30%;*/
     padding: 3%;
+    background: white;
 }
 
 .footer__title{
