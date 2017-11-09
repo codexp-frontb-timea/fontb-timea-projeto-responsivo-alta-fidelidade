@@ -162,23 +162,16 @@ body {
     /*header*/
     /*navbar*/
     .navbar {
-        display: block;
-        position: relative;
-        height: 2em;
+        display: table;
+        width: 100%;
+        height: 2rem;
         padding: 0;
         background-color: #e0e0d1;
     }
-    .navbar__link-list {
-        position: absolute;
-        transform: translateY(-50%);
-        top: 50%;
-        margin: 0;
-        padding: 0 8%;
-        list-style: none;
-    }
     .navbar__link-list li {
-        display: inline;
-        margin: 1em;
+        display: table-cell;
+        width: 1%;
+        text-align: center;
     }
     .navbar__link-list a {
         text-decoration: none;
