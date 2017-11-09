@@ -2,15 +2,17 @@ body {
     width:100%;
     margin: 0;
     font-family: sans-serif;
-    background-color: none;
 }
 
 /*header*/
 .head {
-    position: relative;
+    display: table;
+    width: 100%;
+    text-align: left;
     background-color: #385c80;
 }
 .head__button-mobile {
+    display: table-cell;
     margin: 1em;
     border: .5px groove #2176ca;
     padding: .3em 1em;
@@ -18,19 +20,16 @@ body {
     background: linear-gradient(#3378b1,#385c80);
 }
 .head__logo {
-    display: inline-block;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
+    display: table-cell;
+    vertical-align: middle;
 }
 .head__logo__img {
+    vertical-align: middle;
     width: 32px;
     height: 32px;
 }
 .head__logo__text {
-    display: inline;
-    float: right;
+    display: inline-block;
     font-weight: normal;
     font-size: 1rem;
     color: rgb(201, 4, 4);
@@ -41,8 +40,6 @@ body {
 .head__button-desktop {
     display: none;
 }
-
-/*navbar*/
 .navbar {
     display: none;
 }
@@ -141,13 +138,13 @@ body {
 
 /*footer*/
 .footer{
-    width: 80%;
-    display: flex;
+    display: block;
 }
 
 .bloco_footer{
-    width: 30%;
-    padding-left: 30px;
+    /*width: 30%;*/
+    padding: 3%;
+    background: white;
 }
 
 .footer__title{
@@ -173,16 +170,15 @@ body {
 
 
 @media (min-width: 768px) {
-    body { 
-        background-color: none;
-    }
     /*header*/
     .head {
-        box-sizing: border-box; 
+        display: block;
+        box-sizing: border-box;
+        position: relative;
         height: 5em;
     }
     .head__logo {
-        left: 20%;
+        padding-left: 3rem 
     }
     .head__logo__text {
         font-size: 1.5rem;
@@ -197,15 +193,13 @@ body {
     .head__button-desktop {
         display: inline-block;
         position: absolute;
-        transform: translate(-50%-50%);
-        top: 33%;
-        right: 5%;
+        transform: translate(-50%,-50%);
+        right: 0;
+        top: 2.5rem;
         padding: .3em 1em;
         color: #385c80;
         background-color: white;
     }
-
-    /*navbar*/
     .navbar {
         display: table;
         width: 100%;
@@ -267,59 +261,113 @@ body {
     .news-image{
         width: 35%;
     }
+
+    /*footer*/
+    .footer{
+        display: flex;
+    }
 }
 
 @media (min-width: 992px) {
    body {
        background-color:#e0e0d1; 
-   } 
+   }
+   /*header*/
+   header {
+       position: absolute;
+       display: inline-block;
+       width: 20rem;
+       z-index: 1;
+       top: 20rem;
+       left: 3rem;
+   }
+   .head {
+       display: inline-block;
+   }
+   .head__logo__img {
+       vertical-align: top;
+   }
+   .head__logo__text strong {
+       display: block;
+   }
+   .head__button-desktop {
+       position: absolute;
+       display: block;
+       top: 80%;
+       left: 50%;
+   }
+   .navbar {
+       position: relative;
+       height: 25rem;
+       background-color: whitesmoke;
+   }
+   .navbar__link-list {
+       padding-left: 1em;
+       line-height: 2em;
+   }
+   .navbar__link-list li {
+       display: block;
+       width: 100%;
+       text-align: left;
+   }
+   /*header*/
    .page-hero img {
-        max-height: 25rem;
-        max-width: 64rem;
+        max-height: 27rem;
+        max-width: 87rem;
    }
    .page-hero h4 {
         bottom: 1.5rem;
-        left: 20rem;
+        left: 37rem;
+        font-size: 2.8rem;
    }
    .main-news h4 {
         margin: 0rem;
         padding-bottom: 1rem;
         float: right;
-        max-width: 64rem;
-        font-size: 1.4rem;
-   }
+        max-width: 80rem;
+        font-size: 2rem;
+    }
    .main-news p {
-        max-width: 64rem;
+        max-width: 80rem;
         float: right;
+        font-size: 1.2rem;
    }
    .facebook-hotkey h6 {
         padding: .5rem 2rem;
         max-width: 22%;
         float: right;
+        font-size: 0.9rem;
    }
     .facebook-hotkey a {
         position: absolute;
-        bottom: -11.7rem;
-        right: 22rem;
+        bottom: -18.3rem;
+        right: 30rem;
+        height: 2rem;
+        width: 2rem;
     }
     .facebook-hotkey h6 {
         margin-right: .5rem;
         max-width: 22%;
         float: right;
-   }
+    }
    .news{
         max-width: 65rem;
         max-height: 12rem;
-        padding: 1rem;
-        padding-left: 25%; 
+        padding: 2rem;
+        padding-left: 20%; 
     }
 
     .news-image{
         width: 15rem;
     }
 
-
-   .articles{
+    .articles{
         display: block;
-   }
+    }
+
+
+    /*footer*/
+    .footer{
+        display: flex;
+    }
 }
