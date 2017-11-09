@@ -258,6 +258,11 @@ body {
     .news-image{
         width: 35%;
     }
+
+    /*footer*/
+    .footer{
+        display: flex;
+    }
 }
 
 @media (min-width: 992px) {
@@ -306,4 +311,9 @@ body {
 .news:nth-child(even){
     background-color: #e0e0d1;
 }
+
+    /*footer*/
+    .footer{
+        display: flex;
+    }
 }
