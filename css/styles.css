@@ -261,7 +261,7 @@ body {
 
     /*footer*/
     .footer{
-        display: flex;
+        display: block;
     }
 }
 
@@ -314,6 +314,6 @@ body {
 
     /*footer*/
     .footer{
-        display: flex;
+        display: block;
     }
 }
