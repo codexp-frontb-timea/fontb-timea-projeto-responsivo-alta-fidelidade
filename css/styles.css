@@ -208,7 +208,6 @@ body {
     }
     .main-news h4 {
         padding: 1.5% 1% 0% 1%;
-       width: 100%;
     }
     .main-news p {
         margin: 0.5rem 1rem;
@@ -223,8 +222,6 @@ body {
         margin: 0% 18%;
         max-width: 50%;
     }
-    
-
     .news-title{
         margin: .4%;
     }
