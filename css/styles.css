@@ -130,13 +130,13 @@ body {
 
 /*footer*/
 .footer{
-    width: 80%;
-    display: flex;
+    display: block;
 }
 
 .bloco_footer{
-    width: 30%;
-    padding-left: 30px;
+    /*width: 30%;*/
+    padding: 3%;
+    background: white;
 }
 
 .footer__title{
@@ -252,6 +252,11 @@ body {
 
     .news-image{
         width: 35%;
+    }
+
+    /*footer*/
+    .footer{
+        display: flex;
     }
 }
 
@@ -408,5 +413,8 @@ body {
         display: block;
         margin: 10px 0;
         text-align: center;
+    }
+      .footer{
+        display: flex;
     }
 }
