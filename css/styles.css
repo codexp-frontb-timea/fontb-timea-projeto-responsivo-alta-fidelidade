@@ -5,10 +5,13 @@ body {
 }
 /*header*/
 .head {
-    position: relative;
+    display: table;
+    width: 100%;
+    text-align: left;
     background-color: #385c80;
 }
 .head__button-mobile {
+    display: table-cell;
     margin: 1em;
     border: .5px groove #2176ca;
     padding: .3em 1em;
@@ -16,19 +19,16 @@ body {
     background: linear-gradient(#3378b1,#385c80);
 }
 .head__logo {
-    display: inline-block;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
+    display: table-cell;
+    vertical-align: middle;
 }
 .head__logo__img {
+    vertical-align: middle;
     width: 32px;
     height: 32px;
 }
 .head__logo__text {
-    display: inline;
-    float: right;
+    display: inline-block;
     font-weight: normal;
     font-size: 1rem;
     color: rgb(201, 4, 4);
@@ -137,7 +137,7 @@ body {
         height: 5em;
     }
     .head__logo {
-        left: 20%;
+        padding-left: 3rem 
     }
     .head__logo__text {
         font-size: 1.5rem;
@@ -150,11 +150,8 @@ body {
         display: none;
     }
     .head__button-desktop {
-        display: inline-block;
-        position: absolute;
-        transform: translate(-50%-50%);
-        top: 33%;
-        right: 5%;
+        display: table-cell;
+        vertical-align: middle;
         padding: .3em 1em;
         color: #385c80;
         background-color: white;
@@ -222,6 +219,8 @@ body {
     .news-image{
         width: 35%;
     }
+}
 
-
+@media (min-width: 992px) {
+    
 }
