@@ -45,7 +45,7 @@ body {
     display: none;
 }
 /*navbar*/
-.page-hover {
+.page-hero {
 
     display: none;
 }
@@ -185,20 +185,15 @@ body {
         font-size: .8rem;
         color: dimgray;
     }
-<<<<<<< HEAD
     .page-hero {
-=======
-    /*navbar*/
-    .page-hover {
->>>>>>> f4e75591919448328ce1023b4085d04ddeec4099
         display: block;
         width: 100%;
         position: relative;
     }
     .page-hero img {
         width: 100%;
-        max-height: 15rem;
-        max-width: 38rem;
+        max-height: 19rem;
+        max-width: 48rem;
     }
     .page-hero  h5 {
         font-size: 2rem;
@@ -211,15 +206,14 @@ body {
         bottom: 3%;
         left: 2%;
     }
-<<<<<<< HEAD
     .main-news h4 {
         padding: 1.5% 1% 0% 1%;
-       width: 80%;
+       width: 100%;
     }
     .main-news p {
         margin: 0.5rem 1rem;
         padding: 0%;
-        max-width: 72%;
+        max-width: 97%;
     }
     .facebook-hotkey a {
         margin: .5rem 0 0 9rem;
@@ -230,7 +224,6 @@ body {
         max-width: 50%;
     }
     
-=======
 
     .news-title{
         margin: .4%;
@@ -241,5 +234,4 @@ body {
     }
 
 
->>>>>>> f4e75591919448328ce1023b4085d04ddeec4099
 }
