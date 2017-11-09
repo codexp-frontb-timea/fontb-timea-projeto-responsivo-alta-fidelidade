@@ -414,6 +414,9 @@ body {
         margin: 10px 0;
         text-align: center;
     }
+    main{
+        overflow: hidden;
+    }
       .footer{
         display: flex;
     }
