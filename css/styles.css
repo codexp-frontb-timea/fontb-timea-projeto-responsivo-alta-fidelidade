@@ -299,7 +299,6 @@ body {
    .page-hero img {
         max-height: 27rem;
         max-width: 87rem;
-}
    }
    .page-hero h4 {
         bottom: 1.5rem;
@@ -312,7 +311,7 @@ body {
         float: right;
         max-width: 80rem;
         font-size: 2rem;
-}
+    }
    .main-news p {
         max-width: 80rem;
         float: right;
@@ -335,13 +334,12 @@ body {
         margin-right: .5rem;
         max-width: 22%;
         float: right;
-   }
+    }
    .news{
     display: inline-block;
     padding: 3%;
-}
-
-.news:nth-child(even){
+    }
+    .news:nth-child(even){
     background-color: #e0e0d1;
-}
+    }
 }
