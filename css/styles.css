@@ -40,12 +40,10 @@ body {
 .head__button-desktop {
     display: none;
 }
-/*header*/
-/*navbar*/
 .navbar {
     display: none;
 }
-/*navbar*/
+
 .page-hero {
 
     display: none;
@@ -170,7 +168,9 @@ body {
     }
     /*header*/
     .head {
-        box-sizing: border-box; 
+        display: block;
+        box-sizing: border-box;
+        position: relative;
         height: 5em;
     }
     .head__logo {
@@ -187,14 +187,15 @@ body {
         display: none;
     }
     .head__button-desktop {
-        display: table-cell;
-        vertical-align: middle;
+        display: inline-block;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        right: 0;
+        top: 50%;
         padding: .3em 1em;
         color: #385c80;
         background-color: white;
     }
-    /*header*/
-    /*navbar*/
     .navbar {
         display: table;
         width: 100%;
@@ -261,7 +262,38 @@ body {
 @media (min-width: 992px) {
    body {
        background-color:#e0e0d1; 
-   } 
+   }
+   /*header*/
+   header {
+       position: relative;
+       display: inline-block;
+       width: 20rem;
+   }
+   .head {
+       display: inline-block;
+   }
+   .head__logo__img {
+       vertical-align: top;
+   }
+   .head__logo__text strong {
+       display: block;
+   }
+   .head__button-desktop {
+       position: absolute;
+       display: block;
+   }
+   .navbar {
+       background-color: whitesmoke;
+   }
+   .navbar__link-list {
+       padding-left: 1em;
+   }
+   .navbar__link-list li {
+       display: block;
+       width: 100%;
+       text-align: left;
+   }
+   /*header*/
    .page-hero img {
         max-height: 25rem;
         max-width: 64rem;
